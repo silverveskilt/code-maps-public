@@ -1,6 +1,6 @@
 # CodeMaps - Code Structure Visualizer Tool
 
-Welcome to CodeMaps! This tool helps you visualize the structure and relationships of your software project.
+Welcome to CodeMaps! Gain better control over your software by visualizing the code structure and relationships between classes and methods in your project.
 
 Disclaimer: CodeMaps **is not** an open-source project. This repository simply hosts a built version for public testing.
 
@@ -10,7 +10,7 @@ Disclaimer: CodeMaps **is not** an open-source project. This repository simply h
 Open your browser and go to: **https://codemaps.silverveskilt.com**.
 
 ### 2. Start the local server
-The CodeMaps uses a local http server to allow the web interface to access files on your system. To use it on your local machine, choose one of these methods from below.
+The CodeMaps uses a local http server to allow the web interface to access files on your system. Use your Docker environment to run it on your local machine using one of the following methods:
 
 ### Analyze a Single Project
 ```bash
@@ -58,7 +58,7 @@ services:
 - Add Typescript parser
 - Enable visualizing loosely coupled systems
 - Ship as a plugin for Cursor and VSCode  
-- ...Feel free to get in touch with your ideas 👇
+- Have a new idea how to make this tool more useful to you? 👇
 
 ## Support
 
