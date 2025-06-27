@@ -1,8 +1,11 @@
 # CodeMaps - Code Structure Visualizer Tool
+<!-- demo gif here -->
+![Alt Text](./demo.gif)
 
 Welcome to CodeMaps! Gain better control over your software by visualizing the code structure and relationships between classes and methods in your project.
 
 Disclaimer: CodeMaps **is not** an open-source project. This repository simply hosts a built version for public testing.
+
 
 ## Quick Start
 
@@ -43,7 +46,9 @@ services:
 ## Features
 
 - **File Analysis**: Parses source files to extract classes, methods, and properties
-- **Dependencies Between Classes and methods**: Visualizes relationships and dependencies between different classes in your codebase
+- **Dependencies Between Classes and methods**: Visualizes relationships and dependencies between different 
+- **Move pieces around**: Organize your components the way it makes most sense to you.
+- **Evolve**: Your layout is saved in browser storage. The graph picks up the changes as you update code. You can always add new files or remove them from the layout.
 
 ## Security Notes
 
