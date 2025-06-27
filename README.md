@@ -1,4 +1,4 @@
-# CodeMaps - Code Structure Visualizer Tool
+# CodeMaps - Code Structure Visualizer Tool (C#)
 <!-- demo gif here -->
 ![Alt Text](./demo.gif)
 
@@ -45,7 +45,7 @@ services:
 
 ## Features
 
-- **File Analysis**: Parses source files to extract classes, methods, and properties
+- **File Analysis**: Parses source files to extract classes, methods, and properties (can parse only C# so far)
 - **Dependencies Between Classes and methods**: Visualizes relationships and dependencies between different 
 - **Move pieces around**: Organize your components the way it makes most sense to you.
 - **Evolve**: Your layout is saved in browser storage. The graph picks up the changes as you update code. You can always add new files or remove them from the layout.
