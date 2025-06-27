@@ -2,7 +2,7 @@
 
 Welcome to CodeMaps! This tool helps you visualize the structure and relationships of your software project.
 
-Disclaimer: CodeMaps **is not** an open-source project. This repository simply hosts a production build as long as it's in the testing phase.
+Disclaimer: CodeMaps **is not** an open-source project. This repository simply hosts a built version for public testing.
 
 ## Quick Start
 
