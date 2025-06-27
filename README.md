@@ -1,4 +1,4 @@
-# CodeMaps - Code Structure Visualizer Tool (C#)
+# CodeMaps - Code Structure Visualizer Tool (C# only)
 <!-- demo gif here -->
 ![Alt Text](./demo.gif)
 
