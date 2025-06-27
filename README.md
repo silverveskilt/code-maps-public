@@ -52,6 +52,10 @@ services:
 - CodeMaps has no central server or database and no files are uploaded to external servers - all processing happens locally
 - Only use if you trust the developer
 
+## Motivation
+
+I was looking for a graphic tool to help me understand the dependencies and spot inefficiencies in the growing codebase of my Unity game project. After one of the Cursor plugins that I tested that was charging around $15 a month turned out to be another AI chatbot, and a second one didn't even start, I decided to give it a go and make one that solves the problem for me.
+
 ## Next steps
 
 - Ship as standalone application for macOS
