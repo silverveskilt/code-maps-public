@@ -64,7 +64,7 @@ I was looking for a graphic tool to help me understand the dependencies and spot
 ## Next steps
 
 - Ship as standalone application for macOS
-- Add Typescript parser
+- ~~Add Typescript parser~~
 - Enable visualizing loosely coupled systems
 - Ship as a plugin for Cursor and VSCode  
 - Have a new idea how to make this tool more useful to you? 👇
