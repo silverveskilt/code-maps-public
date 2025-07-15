@@ -13,7 +13,7 @@ I was looking for a graphic tool to help me analyse the dependencies and spot in
 ### 1. Run Codemaps container
 The CodeMaps uses a local http server to allow the web interface to access files on your system. Use your Docker environment to run it on your local machine using one of the following methods:
 
-### 2. Create a directory for storing graph data (optional)
+### (Recommended) Allocate a directory to persist graph data outside the container
 ```bash
 # Create the directory with proper permissions
 cd /path/to/your/project
@@ -21,7 +21,7 @@ mkdir -p .codemaps-data
 chmod 755 .codemaps-data
 ```
 
-### 3. Analyze a Single Project
+### Analyze a Single Project
 ```bash
 # Mount your project directory
 docker run -p 3001:3001 
@@ -44,7 +44,7 @@ services:
       - NODE_ENV=production
 ```
 
-### 3. Connect and Analyze
+### 2. Connect and Analyze
 
 1. **Browse the files** in the working directory in the file browser
 2. **Select your files** and click "View Graph"
