@@ -11,9 +11,9 @@ I was looking for a graphic tool to help me analyse the dependencies and spot in
 ## Quick Start
 
 ### 1. Run Codemaps container
-The CodeMaps uses a local http server to allow the web interface to access files on your system. Use your Docker environment to run it on your local machine using one of the following methods:
+CodeMaps is a web interface with a dedicated local http server allowing the web interface to access files on your system.
 
-### (Recommended) Allocate a directory to persist graph data outside the container
+### 1.1 (Recommended) Allocate a directory to persist graph data outside the container
 ```bash
 # Create the directory with proper permissions
 cd /path/to/your/project
@@ -21,7 +21,10 @@ mkdir -p .codemaps-data
 chmod 755 .codemaps-data
 ```
 
-### Analyze a Single Project
+### 1.2 Use your Docker environment to run it on your local machine using one of the following methods:
+
+### Run the container manually
+
 ```bash
 # Mount your project directory
 docker run -p 3001:3001 
