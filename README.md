@@ -4,6 +4,10 @@
 
 Welcome to CodeMaps! Gain better control over your software by visualizing the code structure and relationships between classes and methods in your project.
 
+## Motivation
+
+I was looking for a graphic tool to help me analyse the dependencies and spot inefficiencies in my Unity game project. After one of the ($15/month) Cursor plugins offered little more than another AI chatbox, and another one didn't even start, I decided to give it a go and make one that solves the problem for me.
+
 ## Quick Start
 
 ### 1. Run Codemaps container
@@ -45,7 +49,6 @@ services:
 1. **Browse the files** in the working directory in the file browser
 2. **Select your files** and click "View Graph"
 
-
 ## Features
 
 - **File Analysis**: Parses source files to extract classes, methods, and properties. Supports **C#** and **Typescript** files
@@ -56,10 +59,6 @@ services:
 ## Security Notes
 
 All processing of your files happens on your machine. Codemaps does not collect or share the contents of your files with remote servers.
-
-## Motivation
-
-I was looking for a graphic tool to help me analyse the dependencies and spot inefficiencies in my Unity game project. After one of the ($15/month) Cursor plugins offered little more than another AI chatbox, and another one didn't even start, I decided to give it a go and make one that solves the problem for me.
 
 ## Next steps
 
