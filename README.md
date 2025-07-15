@@ -23,7 +23,7 @@ chmod 755 .codemaps-data
 
 ### 1.2 Use your Docker environment to run it on your local machine using one of the following methods:
 
-### Run the container manually
+### Either manually...
 
 ```bash
 # Mount your project directory
