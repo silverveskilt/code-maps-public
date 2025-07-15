@@ -11,7 +11,7 @@ I was looking for a graphic tool to help me analyse the dependencies and spot in
 ## Quick Start
 
 ### 1. Run Codemaps container
-CodeMaps is a web interface with a dedicated local http server allowing the web interface to access files on your system.
+CodeMaps is a web interface with a dedicated local http server allowing it to access files on your system.
 
 ### 1.1 (Recommended) Allocate a directory to persist graph data outside the container
 ```bash
