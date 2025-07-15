@@ -1,4 +1,4 @@
-# CodeMaps - Code Structure Visualizer Tool for C# and Typescript
+# CodeMaps - Dependency Visualizer for C# and Typescript code
 <!-- demo gif here -->
 ![Alt Text](./demo.gif)
 
