@@ -4,43 +4,46 @@
 
 Welcome to CodeMaps! Gain better control over your software by visualizing the code structure and relationships between classes and methods in your project.
 
-Disclaimer: CodeMaps **is not** an open-source project. This repository simply hosts a built version for public testing.
-
-
 ## Quick Start
 
-### 1. Access the Web Interface
-Open your browser and go to: **https://codemaps.silverveskilt.com**.
-
-### 2. Start the local server
+### 1. Run Codemaps container
 The CodeMaps uses a local http server to allow the web interface to access files on your system. Use your Docker environment to run it on your local machine using one of the following methods:
 
-### Analyze a Single Project
+### 2. Create a directory for storing graph data (optional)
 ```bash
-# Mount your project directory
-docker run -p 3001:3001 -v /path/to/your/csharp/project:/app/code:ro silverveskilt/codemaps-server:latest
+# Create the directory with proper permissions
+cd /path/to/your/project
+mkdir -p .codemaps-data
+chmod 755 .codemaps-data
 ```
 
-### Using docker-compose
+### 3. Analyze a Single Project
+```bash
+# Mount your project directory
+docker run -p 3001:3001 
+-v /path/to/your/project:/app/code:ro 
+-v /path/to/your/project/data:/app/data silverveskilt/codemaps:latest 
+```
+
+### ...or using docker-compose
 ```yaml
 # docker-compose.yml
-version: '3.8'
 services:
-  codemaps-server:
-    image: silverveskilt/codemaps-server:latest
+  codemaps:
+    image: silverveskilt/codemaps:latest
     ports:
       - "3001:3001"
     volumes:
-      - /Users/username/Projects/MyCSharpApp:/app/code:ro  # Your actual path here
+      - ./:/app/code:ro # a file directory to read
+      - ./.codemaps-data:/app/data # to store the graph state on your file system
+    environment:
+      - NODE_ENV=production
 ```
 
 ### 3. Connect and Analyze
 
-1. **In the web interface**, click "Configure Server"
-2. **Set the server URL** <code>http://localhost:3001</code>
-3. **Test the connection** - it should show "Connected"
-4. **Browse the files** in the working directory in the file browser
-5. **Select your files** and click "View Graph"
+1. **Browse the files** in the working directory in the file browser
+2. **Select your files** and click "View Graph"
 
 
 ## Features
@@ -52,14 +55,11 @@ services:
 
 ## Security Notes
 
-- Files are mounted as **read-only** for security.
-- The server only accesses files within the mounted directory
-- CodeMaps has no central server or database and no files are uploaded to external servers - all processing happens locally
-- Only use if you trust the developer
+All processing of your files happens on your machine. Codemaps does not collect or share the contents of your files with remote servers.
 
 ## Motivation
 
-I was looking for a graphic tool to help me understand the dependencies and spot inefficiencies in the growing codebase of my Unity game project. After one of the Cursor plugins that I tested that was charging around $15 a month turned out to be another AI chatbot, and a second one didn't even start, I decided to give it a go and make one that solves the problem for me.
+I was looking for a graphic tool to help me analyse the dependencies and spot inefficiencies in my Unity game project. After one of the ($15/month) Cursor plugins offered little more than another AI chatbox, and another one didn't even start, I decided to give it a go and make one that solves the problem for me.
 
 ## Next steps
 
