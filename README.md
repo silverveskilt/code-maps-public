@@ -2,7 +2,7 @@
 <!-- demo gif here -->
 ![Alt Text](./demo.gif)
 
-Welcome to CodeMaps! Just click on a UI element to open the relevant line of code in your favourite IDE, making quick product adjustments practically feel as if you'd be using a drag-n-drop editor. Automatically adds data-source attributes and supports ctrl/cmd-click navigation to Cursor, VS Code, and other IDEs.
+Welcome to CodeMaps! Gain better control over your software by visualizing the code structure and relationships between classes and methods in your project.
 
 ## Motivation
 
