@@ -5,7 +5,10 @@ All notable changes to the Code Maps UI will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2024-07-15
+## [1.1.0] - 2025-08-05
+- More accurate Typescript parser
+
+## [1.0.0] - 2025-07-15
 
 ### BREAKING
 - Simplified the setup. The UI and API are both deployed by the same Docker container. Removed server configuration step.
@@ -26,14 +29,14 @@ chmod 755 .codemaps-data
 
 **Step 4**: Rebuild and run the container!
 
-## [0.2.0] - 2024-07-04
+## [0.2.0] - 2025-07-04
 
 ### Added
 - **Inspect Mode**:
 
   Click "Inspect" button on any method to activate inspect mode. Highlights calls that lead up to the inspected method. 
 
-## [0.1.0] - 2024-06-26
+## [0.1.0] - 2025-06-26
 
 ### Added
 - Initial release of Code Maps UI
