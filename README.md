@@ -4,6 +4,8 @@
 
 Welcome to CodeMaps! Gain better control over your software by visualizing the code structure and relationships between classes and methods in your project.
 
+Try live demo at https://codemaps.silverveskilt.com
+
 ## Motivation
 
 I was looking for a graphic tool to help me analyse the dependencies and spot inefficiencies in my Unity game project. After a few attempts to find a solution that works for me, I decided to give it a go and make one that does.
