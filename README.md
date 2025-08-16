@@ -66,6 +66,7 @@ services:
 The contents of your files are remain safe on your development machine and are processed by codemaps application only for the purposes of visual representation.
 
 ## Next steps
+- Selecting the whole codebase with one click (In Docker version)
 - Have a new idea how to make this tool more useful to you? 👇
 
 ## Support
