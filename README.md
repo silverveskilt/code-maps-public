@@ -61,14 +61,9 @@ services:
 
 ## Security Notes
 
-All processing of your files happens on your machine. Codemaps does not collect or share the contents of your files with remote servers.
+The contents of your files are remain safe on your development machine and are processed by codemaps application only for the purposes of visual representation.
 
 ## Next steps
-
-- Ship as standalone application for macOS
-- ~~Add Typescript parser~~
-- Enable visualizing loosely coupled systems
-- Ship as a plugin for Cursor and VSCode  
 - Have a new idea how to make this tool more useful to you? 👇
 
 ## Support
