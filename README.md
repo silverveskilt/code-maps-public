@@ -6,7 +6,7 @@ Welcome to CodeMaps! Gain better control over your software by visualizing the c
 
 ## Motivation
 
-I was looking for a graphic tool to help me analyse the dependencies and spot inefficiencies in my Unity game project. After one of the ($15/month) Cursor plugins offered little more than another AI chatbox, and another one didn't even start, I decided to give it a go and make one that solves the problem for me.
+I was looking for a graphic tool to help me analyse the dependencies and spot inefficiencies in my Unity game project. After a few attempts to find a solution that works for me, I decided to give it a go and make one that does.
 
 ## Quick Start
 
@@ -41,8 +41,8 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./:/app/code:ro # a file directory to read
-      - ./.codemaps-data:/app/data # to store the graph state on your file system
+      - ./:/app/code:ro #  this is 
+      - ./.codemaps-data:/app/data # codemaps stores metadata to this directory to preserve graph state throughout sessions
     environment:
       - NODE_ENV=production
 ```
