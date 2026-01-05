@@ -43,7 +43,7 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./:/app/code:ro #  this is 
+      - ./:/app/code:ro #  this gives codemaps read access to the files in the current directory  
       - ./.codemaps-data:/app/data # codemaps stores metadata to this directory to preserve graph state throughout sessions
     environment:
       - NODE_ENV=production
